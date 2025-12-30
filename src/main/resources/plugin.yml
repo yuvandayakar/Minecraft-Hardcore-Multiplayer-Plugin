@@ -1,0 +1,8 @@
+name: HardcoreMultiplayer
+version: 1.0
+main: yuvan.HardcoreMultiplayer.HardcoreMultiplayer
+api-version: 1.21
+commands:
+  startrun:
+    description: Starts a new hardcore run
+    usage: /startrun
