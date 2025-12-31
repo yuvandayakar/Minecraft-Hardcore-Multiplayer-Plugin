@@ -1,8 +1,23 @@
 name: HardcoreMultiplayer
-version: 1.0
-main: yuvan.HardcoreMultiplayer.HardcoreMultiplayer
-api-version: 1.21
+main: yuvan.hardcoreMultiplayer.HardcoreMultiplayer
+version: 1.1
+api-version: 1.20
+description: Shared hardcore multiplayer with sky lobby, persistent stats and NPC controls
+author: Yuvan
+
 commands:
   startrun:
     description: Starts a new hardcore run
-    usage: /startrun
+    usage: /<command>
+    aliases: [starthc, beginrun]
+
+  hc:
+    description: Manage hardcore stats (admin only)
+    usage: /<command> <deaths|time|cause|reset> [value]
+    permission: hardcoremultiplayer.admin
+    permission-message: §cYou don't have permission to use this command.
+
+permissions:
+  hardcoremultiplayer.admin:
+    description: Allows editing hardcore stats
+    default: op
